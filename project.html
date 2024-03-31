@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+    *
+    {
+        background-color: rgb(225, 181, 100);
+    }
+    .container {
+        padding-right: 30px;
+    }
+    img{
+        width: 40%;
+        height: 40%;
+        margin-left: 100px;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    p{
+        font-size: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 50px;
+    }
+    #title
+    {
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        padding-bottom: 30px;
+        animation: slide-in 0.5s ease forwards;
+    }
+    #left
+    {
+        animation: slideLeft 0.5s ease forwards;
+    }
+    #right
+    {
+        animation: slideRight 0.5s ease forwards;
+    }
+    @keyframes slideRight {
+        0%
+        {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        100%
+        {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes slideLeft {
+        0%
+        {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        100%
+        {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes slide-in {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<body>
+    <p id="title">
+        Weather forecast
+    </p>
+    <div class="container">
+        <img src="input.png" id="left">
+        <img src="output.png" id="right">
+    </div>
+    <p><b>Programming languages used:</b>&nbsp&nbspHTML, CSS, JavaScript.<br><br>
+    <b>Concepts used:</b>&nbsp&nbspAPI Integration.<br><br>
+    <b>Motive:</b>&nbsp&nbspWhen a user gives the location as the input, Weather of the particular location will be displayed as the output.<br><br>
+    <b>Description:</b>&nbsp&nbspMy Weather API project leverages real-time data from a weather API to deliver comprehensive weather forecasts to users. Through intuitive interface design and seamless API integration, users can effortlessly access current weather conditions and forecasts for any location.
+     The project boasts features such as temperature, humidity, wind speed, and weather condition displays, coupled with user-friendly interactions for easy navigation.This application ensures scalability and performance while offering customization options like unit selection and theme preferences. 
+    <br><br></p>
+    
+</body>
+</html>
