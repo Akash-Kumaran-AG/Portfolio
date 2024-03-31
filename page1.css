@@ -1,0 +1,151 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav
+{
+    float: right;
+    background: wheat;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 22px;
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.5);
+    margin-right: 60px;
+    margin-top: 10px;
+}
+nav > a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 22px;
+    animation: slideTop 0.2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+nav > a:hover
+{
+    transition: 0.25s;
+    /*background: rgb(56,130,209);*/
+    color:red;
+}
+.li2
+{
+    display: inline-flex;
+    font-size: 20px;
+    animation: slideRight 0.5s ease forwards;
+    font-size: 35px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.content
+{
+    font-size: large;
+    width: 700px;
+    text-align: center;
+    border: solid white;
+    border-radius: 20px;
+    padding: 10px;
+    animation: slide-in 1s forwards;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.content,.name
+{
+    display: inline-block;
+}
+#social a
+{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 40px;   
+ height: 40px;
+ background: transparent;
+ border: 2px solid #0ef;
+ border-radius: 50px;
+ font-size: 20px;
+ color: #0ef;
+ text-decoration: none;
+ margin: 30px 15px 30px 0;
+ transition: .5s ease;   
+}
+#social a:hover{
+    background: #0ef;
+    color: black;
+    box-shadow:0 0 20px #0ef;
+}
+body {
+    background-color: rgb(34, 32, 32);
+    color: wheat;
+    padding-left: 40px;
+}
+
+.name {
+    margin-top: 200px;
+    width: 300px;
+}
+
+#transition {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.name pre {
+    font-size: 40px;
+}
+
+.name pre span {
+    color: aqua;
+}
+
+.content {
+    margin-left: 700px;
+    margin-top: -1000px;
+}
+
+#social {
+    float: left;
+}
+
+
+@keyframes slideRight {
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
